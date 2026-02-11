@@ -1,43 +1,26 @@
-# Technical Approach: Customer Equity Audit
+# Technical Approach: Multi-Source Customer Equity Engine
 
-## 1. Data Architecture (The "Ecosystem")
-The project consolidates data from 4 isolated WooCommerce instances into a centralized Analytical Engine.
+## 1. Data Architecture: The Analytical Unified Layer
+The core challenge was consolidating 4 isolated WooCommerce databases (MariaDB) into a single **Consolidated Star Schema** designed for strategic auditing and hybrid-model analysis.
 
-### Schema Design (Star Schema)
-*   **Fact Tables:** `fact_orders` (Header), `fact_order_items` (Line Level).
-*   **Dimension Tables:** `dim_customer_profile`, `dim_product`, `dim_store`.
-*   **Analytical Views:** Layered SQL views to abstract complexity.
+### Layered SQL Architecture (7-Level View Logic)
+To ensure data integrity and performance, I implemented a modular view architecture:
+1.  **Level 1-2 (Staging):** Normalizing raw tables from 4 different brands into unified Fact and Dimension structures.
+2.  **Level 3-4 (Enrichment):** Grouping 500+ SKUs into **"Strategic Niches"** based on shared product attributes (e.g., Team, Category, Player) to simplify cross-brand analysis.
+3.  **Level 5 (Data Quality):** Filtering **POS Sales (Physical Store)**. Since POS transactions were often recorded using generic Tax-IDs/IDs, they were isolated to prevent "Anonymous Ghosting" from skewing the individual loyalty models.
+4.  **Level 6 (The Engine):** Calculating RFM Scores using **Absolute Logic** (Segmenting by specific business thresholds rather than simple relative percentiles).
+5.  **Level 7 (Reporting):** A flattened, pre-calculated layer optimized for Tableau extracts (< 500ms performance).
 
-```mermaid
-erDiagram
-    FACT_ORDERS ||--|{ FACT_ORDER_ITEMS : contains
-    FACT_ORDERS }|--|| DIM_CUSTOMER_PROFILE : purchased_by
-    FACT_ORDER_ITEMS }|--|| DIM_PRODUCT : is_item
-    DIM_PRODUCT ||--|| VIEW_STG_PRODUCT_MASTER : enriched_with
-    FACT_ORDERS ||--|| VIEW_RPT_STRATEGIC_INSIGHTS : feeds
-```
+## 2. Strategic SQL Engineering
 
-## 2. SQL Engineering Strategy
+### A. Protecting the "Champion" Integrity (Absolute RFM)
+While standard models use relative percentiles (`NTILE`), this business model required higher precision. High-turnover niches like Formula 1 could "artificially" lower the bar for what a Champion is. I implemented **Absolute Revenue and Frequency Thresholds** to ensure a "Champion" is defined by true business-value milestones.
 
-### A. Data Unification & Cleaning
-*   **Challenge:** Product names were inconsistent (e.g., "Camiseta Oriente" vs "Pera Oriente 2022").
-*   **Solution:** Created `view_stg_product_master` using SQL CASE statements to map 500+ SKUs to stabilized "Niche Terms" (e.g., 'Oriente Petrolero', 'Formula 1', 'Anime').
+### B. Attribute-Based Niche Normalization
+By extracting attributes from product metadata across 4 stores, I created a unified "Niche Hub". This allowed us to see that a customer buying from the "Oriente Petrolero" brand was the same "Profile" regardless of which specific store they purchased from.
 
-### B. RFM Segmentation Engine
-Instead of arbitrary thresholds, we used **Statistical Ranking** to ensure the model adapts to data changes.
-
-```sql
--- Snippet from view_fct_customer_segmentation.sql
-NTILE(5) OVER (ORDER BY last_order_date ASC) as r_score,
-NTILE(5) OVER (ORDER BY frequencies ASC) as f_score,
-NTILE(5) OVER (ORDER BY monetary ASC) as m_score
-```
-
-### C. The "Strategic Nexus" View
-We created a final flattened view (`view_rpt_strategic_insights`) that pre-calculates the correlations for the visualization layer, ensuring Tableau performance is optimized (extracts < 500ms).
-
-## 3. Tech Stack
-*   **Database:** MariaDB (Remote VPS).
-*   **ETL:** Node.js (Custom scripts for JSON parsing and data loading).
-*   **Analysis:** Advanced SQL (Window Functions, CTEs).
-*   **Visualization:** Tableau Desktop (Dual-Axis Charts, LOD Expressions).
+## 3. Tech Stack & Performance
+*   **Database:** MariaDB (Production Environment).
+*   **Data Modeling:** Star Schema (Denormalized for BI efficiency).
+*   **Advanced SQL:** Window Functions, CTEs, and Cross-Join matrices for affinity/correlation calculation.
+*   **BI Layer:** Tableau Desktop (LOD Expressions for calculating "Share of Champions" and Niche Overlap).
