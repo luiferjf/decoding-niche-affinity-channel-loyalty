@@ -1,7 +1,7 @@
 # Multi-Brand Growth Strategy: Decoding Niche Affinity & Channel Loyalty
-**Project Role:** Senior Data Analyst | **Tools:** SQL (MariaDB), Tableau
-
 ![Dashboard Overview](dashboards/Dashboard-project.png)
+
+**Project Role:** Senior Data Analyst | **Tools:** SQL (MariaDB), Tableau
 
 > **[📄 Read the Executive Report (Key Insights & Strategy)](docs/executive_report.md)**
 
