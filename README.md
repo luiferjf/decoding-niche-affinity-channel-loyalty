@@ -3,6 +3,8 @@
 
 ![Dashboard Overview](dashboards/Dashboard-project.png)
 
+> **[📄 Read the Executive Report (Key Insights & Strategy)](docs/executive_report.md)**
+
 ## 🚀 The Business Problem
 A vertically integrated Print-on-Demand (POD) retail group with 4 distinct brands was struggling to optimize its marketing budget.
 *   **The Conflict:** The business was torn between a "Volume Strategy" (Formula 1 traffic) and a "Value Strategy" (Oriente Petrolero loyalty).
@@ -31,13 +33,13 @@ I unified siloed data from 4 WooCommerce stores into a single SQL Analytical Eng
 ## 📂 Repository Structure
 *   **`/dashboards`**: The final Tableau Workbook (`niche_affinity_channel_loyalty.twbx`) visualizing the 5 Strategic Insights.
 *   **`/docs`**: Executive Reports & Strategic Frameworks.
-    *   `EXECUTIVE_REPORT.md`: The high-level business findings (Start Here).
-    *   `DASHBOARD_WIREFRAME.md`: The design spec for the visualization.
+    *   `executive_report.md`: The high-level business findings (Start Here).
+    *   `dashboard_wireframe.md`: The design spec for the visualization.
 *   **`/sql`**: The Analytical Engine (7-Layer View Architecture).
     *   `01-05`: Data Unification & Staging.
     *   `06`: The RFM Segmentation Logic (Absolute Thresholds).
     *   `07`: The Strategic Reporting Layer.
-*   **`/data`**: The final datasets used (`final_tableau_dataset.csv`).
+*   **`/data`**: The final datasets used (`tableau_dataset.csv` & `affinity_matrix.csv`).
 
 ---
 
