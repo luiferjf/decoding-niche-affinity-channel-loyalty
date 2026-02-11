@@ -6,7 +6,8 @@
 > **[📄 Read the Executive Report (Key Insights & Strategy)](docs/executive_report.md)**
 
 ## 🚀 The Business Problem
-A vertically integrated Print-on-Demand (POD) retail group with 4 distinct brands was struggling to optimize its marketing budget.
+A vertically integrated retail group with 4 distinct brands was struggling to optimize its marketing budget.
+*   **The Model:** **Hybrid Just-in-Time (JIT) Manufacturing.** Unlike simple POD, the business managed owned inventory of premium blanks (Bella+Canvas), optimizing margins by balancing "Pre-Cut Stock" for retail vs. "On-Demand Assembly" for online orders.
 *   **The Conflict:** The business was torn between a "Volume Strategy" (Formula 1 traffic) and a "Value Strategy" (Oriente Petrolero loyalty).
 *   **The Objective:** Audit the customer base to pivot from **Traffic-First** to **Profit-First** by identifying **High-LTV Customer Segments**.
 

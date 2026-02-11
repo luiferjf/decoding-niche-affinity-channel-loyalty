@@ -4,8 +4,8 @@
 ![Dashboard Overview](../dashboards/Dashboard-project.png)
 
 ## 1. The Business Problem
-The client operates a complex ecosystem of 4 distinct brands (**Oriente Petrolero, Rabbona, Victus, Nebula**) supported by an agile In-House POD (Print-on-Demand) factory. 
-**The Challenge:** While production was agile, marketing budget was being allocated inefficiently based on "Volume" rather than "Customer Value". The business lacked a unified view of which Niches (Interests) and Channels were driving true retention vs. one-time churn.
+The client operates a complex ecosystem of 4 distinct brands (**Oriente Petrolero, Rabbona, Victus, Nebula**) supported by an **Agile In-House Manufacturing Hub**.
+**The Challenge:** The business evolved from a pure digital model to a **Hybrid Retail System** (Physical Store + E-commerce). Production complexity varied by design (tiered vinyl costs, variable labor time), creating hidden margin leaks. While production was agile, marketing budget was being allocated inefficiently based on "Volume" rather than "Customer Value".
 
 ## 2. The Solution: Customer Equity Audit
 We unified data from all 4 WooCommerce stores into a single Analytical Engine to audit the business across three dimensions:
