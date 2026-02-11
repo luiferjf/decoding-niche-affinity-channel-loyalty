@@ -10,7 +10,7 @@ The client operates a complex ecosystem of 4 distinct brands (**Oriente Petroler
 ## 2. The Solution: Customer Equity Audit
 We unified data from all 4 WooCommerce stores into a single Analytical Engine to audit the business across three dimensions:
 1.  **Niche Affinity:** Moving beyond "Products" to "Passions" (F1, Football, Pop Culture).
-2.  **Channel Loyalty:** Evaluating the ROI of the "High Touch" WhatsApp Admin channel.
+2.  **Channel Loyalty:** Evaluating the ROI of the "High Touch" **Chat Channel (WhatsApp, FB Messenger, IG DM, TikTok DM)**.
 3.  **RFM Segmentation:** Mathematically identifying "Champions" (High Lifetime Value).
 
 ## 3. Key Findings & Strategic Insights
@@ -24,14 +24,14 @@ We unified data from all 4 WooCommerce stores into a single Analytical Engine to
     *   **Strategic Action (AOV Growth):** Implement **Bundle Pricing** to increase average order value, capitalizing on the high loyalty.
 
 ### B. Channel Audit: The ROI of Assisted Sales
-*   **Chat/Call (WhatsApp, FB Messenger, IG DM, TikTok DM):** This is the **Retention Champion**. **28% (1 in 3)** customers are Champions. Personalized assisted sales is the preferred anchor for high-value loyalists.
+*   **Chat Channel (WhatsApp, FB Messenger, IG DM, TikTok DM):** This is the **Retention Champion**. **28% (1 in 3)** customers are Champions. Personalized assisted sales is the preferred anchor for high-value loyalists.
     *   **Strategic Action:** Designate Chat channels for **Exclusive Pre-Launch Access**. Target Oriente Champions with early-access links via WhatsApp 24 hours before public release.
 *   **Web Checkout:** High acquisition volume but secondary for Champion conversion (1.2%).
     *   **Strategic Action (Omnichannel Migration):** Use remarketing to migrate "Web-Only" buyers of high-potential niches (Oriente) into the high-retention Chat ecosystem.
 *   **POS Data Quality Issue:** We identified a significant bias in POS data where high-volume customers were anonymous (NIT/Tax-ID). Filters were applied to exclude "Ghost Champions".
 
 ### C. The Triple Nexus (Targeting Strategy)
-*   **Profile 1: The Traditionalist:** A local club fan (Oriente) who buys via Chat. Values exclusivity and human connection.
+*   **Profile 1: The Champion Traditionalist:** These are the business's most valuable customers (**Champions**). They are fans of the local club (Oriente) who exclusively use **Chat Channels** for their transactions. This segment represents the perfect intersection of high-affinity interest and high-touch relationship management.
     *   **Strategic Action (VIP Outbound):** Implement a "Sneak Peek" protocol where agents actively **Call** top Champions before a launch to offer exclusive pre-order access with a loyalty discount. *Why?* High-touch service drives emotional loyalty in this segment.
 *   **Profile 2: The Modern Fan:** A global sports fan (F1/Europe) who buys via Web. Values speed and autonomy.
     *   **Strategic Action (CRO & Automation):** Optimize the "Speed of Purchase" (Fast Checkout). Implement aggressive **Order Bumps** (One-Click Upsells) to maximize AOV without human friction. Expand reach via **TikTok Ads & SMS Marketing** to catch them where they browse.
