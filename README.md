@@ -8,22 +8,22 @@
 ## 🚀 The Business Problem
 A vertically integrated retail group with 4 distinct brands was struggling to optimize its marketing budget.
 *   **The Model:** **Hybrid Just-in-Time (JIT) Manufacturing.** Unlike simple POD, the business managed owned inventory of premium blanks (Bella+Canvas), optimizing margins by balancing "Pre-Cut Stock" for retail vs. "On-Demand Assembly" for online orders.
-*   **The Conflict:** The business was torn between a "Volume Strategy" (Formula 1 traffic) and a "Value Strategy" (Oriente Petrolero loyalty).
-*   **The Objective:** Audit the customer base to pivot from **Traffic-First** to **Profit-First** by identifying **High-LTV Customer Segments**.
+*   **The Conflict:** The business was torn between a **Volume-Based Acquisition** strategy (Formula 1 sales) and a **Value-Based Retention** strategy (Oriente Petrolero loyalty).
+*   **The Objective:** Audit the customer base to pivot from **Customer Volume** to **Customer Equity** by identifying high-conversion niche and channel corridors.
 
 ## 💡 The Solution: A Unified Customer Equity Engine
 I unified siloed data from 4 WooCommerce stores into a single SQL Analytical Engine to audit the business across 3 dimensions: **Interest (Niche)**, **Channel (Source)**, and **Value (RFM Segment)**.
 
 ### 1. Key Insights Uncovered (The Audit Results)
 
-#### A. Niche Strategy: The "Viral Trap" vs "The Engine"
-*   **Formula 1:** Drives massive traffic (70% Web) but has a low conversion to Champion relative to volume. However, it serves as a critical **Acquisition Funnel** (23% retention among registered users).
-*   **Oriente Petrolero:** The "Golden Goose". Attracts **49% of ALL Champions** in the company. It is the engine of profitability.
-*   **Real Madrid:** The "Hidden Gem" with a **2.5:1 Retention Ratio**, driven by the team's Champions League momentum.
+#### A. Niche Strategy: Acquisition vs. Loyalty
+*   **Formula 1:** Drives high acquisition volume (70% Web) but with lower retention. It is a massive **New Customer Funnel** that requires optimized remarketing.
+*   **Oriente Petrolero:** The **Loyalty Engine**. Attracts **49% of ALL Champions**. It is the primary driver of recursive profit.
+*   **Real Madrid:** High-affinity niche with a **2.5:1 Retention Ratio**.
 
-#### B. Channel Strategy: The ROI of "Human Touch"
-*   **WhatsApp (Admin):** **28%** of customers are Champions. The sales team generates **3x more Value per Customer** than the web.
-*   **Web Checkout:** Dominated by first-time buyers. It is the necessary "Volume Gate", but not the "Value Driver".
+#### B. Channel Strategy: The ROI of "High Touch"
+*   **Chat/Call (WhatsApp, FB Messenger, IG DM, TikTok DM):** **28%** of customers are Champions. Assisted sales generate **3x more Value per Customer** than pure web transactions.
+*   **Web Checkout:** The primary "Volume Gate" for new acquisition, but secondary for long-term loyalty management.
 
 #### C. Growth Opportunities (The "Player Effect")
 *   **Cross-Sell Win:** Buyers of **Barcelona** have a **12% probability** of buying **PSG** (Messi/Neymar Effect).
