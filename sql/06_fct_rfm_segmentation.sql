@@ -1,6 +1,6 @@
 -- 06_fct_rfm_segmentation.sql
 -- Purpose: The Engine. Scoring customers based on value and loyalty.
--- Target: agent_lab.view_fct_rfm_segmentation
+-- Target: foundation_v1.view_fct_rfm_segmentation
 
 CREATE OR REPLACE VIEW view_fct_rfm_segmentation AS
 WITH raw_rfm AS (

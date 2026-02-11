@@ -1,6 +1,6 @@
 -- 00_stg_master_sales.sql
 -- Purpose: Unify all sales into a single "Truth Table" with strategic tags.
--- Target: agent_lab.view_stg_master_sales
+-- Target: foundation_v1.view_stg_master_sales
 
 CREATE OR REPLACE VIEW view_stg_master_sales AS
 SELECT 
