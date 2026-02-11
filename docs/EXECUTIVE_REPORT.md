@@ -1,6 +1,8 @@
 # Executive Report: Customer Equity Audit & Niche Strategy
 **Client:** Unified Retail Group (Portfolio) | **Period:** 2018 - 2023 
 
+![Dashboard Overview](../dashboards/Dashboard-project.png)
+
 ## 1. The Business Problem
 The client operates a complex ecosystem of 4 distinct brands (**Oriente Petrolero, Rabbona, Victus, Nebula**) supported by an agile In-House POD (Print-on-Demand) factory. 
 **The Challenge:** While production was agile, marketing budget was being allocated inefficiently based on "Volume" rather than "Customer Value". The business lacked a unified view of which Niches (Interests) and Channels were driving true retention vs. one-time churn.

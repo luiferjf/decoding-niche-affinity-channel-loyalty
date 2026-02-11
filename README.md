@@ -1,7 +1,7 @@
-# Customer Equity & Strategy Audit: Unifying 4 Brands to Maximize CLV
+# Multi-Brand Growth Strategy: Decoding Niche Affinity & Channel Loyalty
 **Project Role:** Senior Data Analyst | **Tools:** SQL (MariaDB), Tableau
 
-![Dashboard Hero Image](dashboards/Dashboard-project.png)
+![Dashboard Overview](dashboards/Dashboard-project.png)
 
 ## 🚀 The Business Problem
 A vertically integrated Print-on-Demand (POD) retail group with 4 distinct brands was struggling to optimize its marketing budget.
@@ -29,7 +29,7 @@ I unified siloed data from 4 WooCommerce stores into a single SQL Analytical Eng
 ---
 
 ## 📂 Repository Structure
-*   **`/dashboards`**: The final Tableau Workbook (`Customer_Equity_Audit_v1.twb`) visualizing the 5 Strategic Insights.
+*   **`/dashboards`**: The final Tableau Workbook (`niche_affinity_channel_loyalty.twbx`) visualizing the 5 Strategic Insights.
 *   **`/docs`**: Executive Reports & Strategic Frameworks.
     *   `EXECUTIVE_REPORT.md`: The high-level business findings (Start Here).
     *   `DASHBOARD_WIREFRAME.md`: The design spec for the visualization.

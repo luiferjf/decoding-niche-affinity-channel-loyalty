@@ -5,6 +5,8 @@ Thumbs.db
 
 # Documentation / Hidden Logic
 scripts/
+db_audit/
+data/raw/
 *.log
 *.tmp
 
