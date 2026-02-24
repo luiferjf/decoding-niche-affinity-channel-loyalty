@@ -2,6 +2,9 @@
 
 **Client:** Rabbona Group | **Period:** 2018 - 2023
 
+![Dashboard Overview](../assets/dashboard.png)
+> **Interactive Dashboard:** [View Live on Tableau Public](https://public.tableau.com/views/Customer_Equity_Audit_v1/Dashboard1)
+
 ## 1. The Business Problem
 
 The Rabbona Group operates a complex ecosystem of 4 distinct brands (**Oriente Petrolero, Rabbona, Victus, Nebula**) supported by an **Agile In-House Manufacturing Hub**.
