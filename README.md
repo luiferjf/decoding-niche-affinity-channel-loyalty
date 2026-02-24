@@ -5,7 +5,6 @@
 ![Dashboard Overview](assets/dashboard.png)
 
 > **Interactive Dashboard:** [View Live on Tableau Public](https://public.tableau.com/views/Customer_Equity_Audit_v1/Dashboard1)
-> **[Read the Executive Report →](docs/executive_report.md)**
 
 | Metric | Finding |
 | :--- | :--- |
