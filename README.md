@@ -53,7 +53,7 @@ The Rabbona Group operated 4 WooCommerce stores (Pasión Albiverde, Rabbona, Vic
 ## Technical Architecture
 
 - **Data Unification:** 4 isolated WooCommerce databases consolidated into a single MariaDB Star Schema (~5,600 orders, ~9,000 order line items across 2018–2023)
-- **7-Layer SQL View Architecture:** Staging → Normalization → Niche Enrichment → Data Quality → RFM Engine → Tableau Reporting
+- **4-Stage SQL Analytical Pipeline:** Staging & Unification → Absolute RFM Engine → Affinity Matrix → Tableau Reporting
 - **Absolute RFM Logic:** Business-threshold segmentation rather than relative `NTILE` percentiles, preventing high-churn niches (F1) from diluting the Champion definition
 - **PII Governance:** All customer identifiers (email, phone) anonymized via SHA-256 hashing before entering the analytical layer
 - **"Ghost Champions" Filter:** POS anonymous Tax-ID transactions identified and excluded to prevent loyalty model bias
@@ -62,7 +62,7 @@ The Rabbona Group operated 4 WooCommerce stores (Pasión Albiverde, Rabbona, Vic
 
 ## Repository Structure
 
-- `sql/`: 7-layer SQL analytical engine (Staging through Strategic Reporting)
+- `sql/`: 4-stage SQL analytical engine (Staging through Strategic Reporting)
 - `data/`: Final CSV datasets consumed by the Tableau workbook
 - `docs/executive_report.md`: Full strategic findings and recommendations
 - `docs/data_quality_report.md`: Data governance, integrity audit and cleaning methodology
