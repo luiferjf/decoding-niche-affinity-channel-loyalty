@@ -2,8 +2,6 @@
 
 **Client:** Rabbona Group | **Period:** 2018 - 2023
 
-![Dashboard Overview](../assets/dashboard.png)
-
 ## 1. The Business Problem
 
 The Rabbona Group operates a complex ecosystem of 4 distinct brands (**Oriente Petrolero, Rabbona, Victus, Nebula**) supported by an **Agile In-House Manufacturing Hub**.
@@ -14,54 +12,57 @@ The Rabbona Group operates a complex ecosystem of 4 distinct brands (**Oriente P
 We unified data from all 4 WooCommerce stores into a single Analytical Engine to audit the business across three dimensions:
 
 1. **Niche Affinity:** Moving beyond "Products" to "Passions" (F1, Football, Pop Culture).
-2. **Channel Loyalty:** Evaluating the ROI of the "High Touch" **Chat Channel (WhatsApp, FB Messenger, IG DM, TikTok DM)**.
+2. **Channel Loyalty:** Evaluating the ROI of the "High Touch" **Chat Channel (WhatsApp, FB Messenger, IG DM, TikTok DM)** against standard Web Checkout.
 3. **RFM Segmentation:** Mathematically identifying "Champions" (High Lifetime Value).
+
+---
 
 ## 3. Key Findings & Strategic Insights
 
-### A. Niche Strategy: Acquisition vs. Loyalty
+### 1. Niche Quality: Acquisition vs. Loyalty
 
-![Niche Analysis Chart](../assets/segment-vs-niche.png)
+![Niche vs Segment](../assets/niche-vs-segment.png)
+*(Tableau Sheet: Segment distribution across the top niches)*
 
-*(Tableau Sheet: Segment distribution across the top 4 niches)*
+* **Insight:** Formula 1 (Victus) and global clubs (Rabbona) drive a massive volume of new traffic and customer acquisition, but the vast majority make a single purchase. On the other hand, the Oriente Petrolero base (local club) retains its customers long-term.
+* **Strategic Action:** Aggressively increase the "Launch Cadence" for F1 and global clubs to try converting one-time buyers into repeat customers via automated email/SMS flows, while treating the local club (OP) as a VIP retention program.
 
-* **Formula 1: High Acquisition, High Churn.** F1 drives the highest volume of New Customers (70% via Web), yet shows lower retention. High volume is currently a "one-off" transaction model.
-  * **Strategic Action (Frequency & Conversion):** Increase **Launch Cadence** (more frequent drops) and implement automated email/SMS flows to turn these "New Customers" into repeat buyers.
-* **Oriente Petrolero: The Loyalty Engine.** While acquisition volume is lower, these customers have a **3x higher probability** of becoming "Champions." They are the anchor of business profitability.
-  * **Strategic Action (Retention First):** Prioritize budget for loyalty-re-engagement campaigns and exclusive customer-only drops for the Oriente segment.
-* **Real Madrid: The High-Affinity Gem.** High natural retention (**2.5:1** Ratio).
-  * **Strategic Action (AOV Growth):** Implement **Bundle Pricing** to increase average order value, capitalizing on the high loyalty.
+### 2. The Champion Distribution: The Engine of Profit
 
-### B. Channel Audit: The ROI of Assisted Sales
+![Segment vs Niche](../assets/segment-vs-niche.png)
+*(Tableau Sheet: Customer segments breakdown by top niche)*
 
-![Channel ROI Chart](../assets/channel-loyalty-ltv.png)
+* **Insight:** Despite high sales volumes from global clubs, a single local club brand (Oriente Petrolero) concentrates almost 50% of **all** Champion customers in the entire group. This local base provides the real Lifetime Value (LTV).
+* **Strategic Action:** Protect this local base at all costs. Direct marketing budget not just to acquiring new OP fans, but investing heavily in loyalty and re-engagement campaigns (exclusive drops, VIP access) to ensure they remain the profitable anchor of the business.
 
-*(Tableau Sheet: Champion concentration by acquisition channel)*
+### 3. Channel Audit: The ROI of Assisted Sales
 
-* **Chat Channel (WhatsApp, FB Messenger, IG DM, TikTok DM):** This is the **Retention Champion**. **28% (1 in 3)** customers are Champions. Personalized assisted sales is the preferred anchor for high-value loyalists.
-  * **Strategic Action:** Designate Chat channels for **Exclusive Pre-Launch Access**. Target Oriente Champions with early-access links via WhatsApp 24 hours before public release.
-* **Web Checkout:** High acquisition volume but secondary for Champion conversion (1.2%).
-  * **Strategic Action (Omnichannel Migration):** Use remarketing to migrate "Web-Only" buyers of high-potential niches (Oriente) into the high-retention Chat ecosystem.
-* **POS Data Quality Issue:** We identified a significant bias in POS data where high-volume customers were anonymous (NIT/Tax-ID). Filters were applied to exclude "Ghost Champions".
+![Channel Loyalty LTV](../assets/channel-loyalty-ltv.png)
+*(Tableau Sheet: LTV and Champion concentration by acquisition channel)*
 
-### C. The Triple Nexus (Targeting Strategy)
+* **Insight:** The assumption that 100% self-serve web sales are optimal is dangerous. Customers who purchase via Chat (assisted sales) generate **3x more value (LTV)** and have a 28% conversion rate to Champions, compared to a mere 1.2% on the Web.
+* **Strategic Action:** Maintain and scale the chat sales team. Treat Chat not merely as "customer support" but as the premium closing channel for high-ticket and high-LTV customers.
 
-* **Profile 1: The Champion Traditionalist:** These are the business's most valuable customers (**Champions**). They are fans of the local club (Oriente) who exclusively use **Chat Channels** for their transactions. This segment represents the perfect intersection of high-affinity interest and high-touch relationship management.
-  * **Strategic Action (VIP Outbound):** Implement a "Sneak Peek" protocol where agents actively **Call** top Champions before a launch to offer exclusive pre-order access with a loyalty discount. *Why?* High-touch service drives emotional loyalty in this segment.
-* **Profile 2: The Modern Fan:** A global sports fan (F1/Europe) who buys via Web. Values speed and autonomy.
-  * **Strategic Action (CRO & Automation):** Optimize the "Speed of Purchase" (Fast Checkout). Implement aggressive **Order Bumps** (One-Click Upsells) to maximize AOV without human friction. Expand reach via **TikTok Ads & SMS Marketing** to catch them where they browse.
+### 4. The Tactical Baseline: Channel Preference by Niche
 
-### D. Growth Engine (Cross-Sell Probabilities)
+![Niche vs Channel](../assets/niche-vs-channel.png)
+*(Tableau Sheet: Purchase channel preference across different niches)*
 
-![Cross-Sell Matrix Chart](../assets/growth-cross-sell.png)
+* **Insight:** Niches dictate the channel preference. Fans of global football or F1 trust the web and prefer self-service checkout. Conversely, local club fans (Oriente Petrolero) strongly prefer the warmth and trust of chat or POS transactions.
+* **Strategic Action:** Distribute the monthly ads and marketing budget accordingly. Run WhatsApp/Message campaigns for PA (which are significantly cheaper than web conversion campaigns), and invest heavily in Web Conversion optimization/campaigns for the F1 and Tennis audiences.
 
+### 5. The Triple Nexus: Targeting Profiles
+
+![Champions Map](../assets/champions-map.png)
+*(Tableau Sheet: The intersection of Niche, Segment, and Channel)*
+
+* **Insight:** There are two distinct "Golden Profiles". Profile 1: *The Traditionalist* (Oriente Petrolero + Chat = High emotional LTV). Profile 2: *The Modern Fan* (F1/Global Clubs + Web = High transactional volume).
+* **Strategic Action:** Implement a bifurcated omnichannel marketing strategy. Allocate budget to VIP Outbound targeting for Profile 1, and allocate performance marketing budget (TikTok Ads, SMS) for Profile 2.
+
+### 6. The Growth Engine: Cross-Sell Matrix
+
+![Cross-Sell Matrix](../assets/growth-cross-sell.png)
 *(Tableau Sheet: Visual network of high-probability cross-sell paths)*
 
-The "Next Best Action" matrix identified high-probability cross-sell paths based on historical behavior:
-
-| Purchase A (Trigger) | Next Likely Purchase (Offer) | Probability | Strategic Action (The "Playbook") |
-| :--- | :--- | :--- | :--- |
-| **Oriente Petrolero** | **Real Madrid** | **35.2%** | **Multi-Tier Loyalty:** Latam customers show high lealtad dual (Local Hero + European Giant). Offer "Home + Global" bundle discounts. |
-| **Inglaterra** | **Manchester United** | **33.3%** | **Affinity Bundles:** Country + Club correlation. If they buy England, instantly offer Man Utd at checkout. |
-| **Barcelona** | **PSG** | **12.3%** | **The "Player" Effect:** Launch player-centric campaigns (Messi/Neymar legacy) targeting Barcelona buyers with PSG kits. |
-| **Oriente Petrolero** | **Bolivia National Team** | **9.2%** | **Event-Triggered:** Push National Team drops to Oriente buyers specifically during FIFA Match Weeks. |
+* **Insight:** Purchase overlaps are not random; they follow strong cultural affinities. For example: Nationality + Club (England & Man United cluster at 33%), and Latam Pride (Oriente Petrolero buyers have a 35.2% probability of buying Real Madrid products).
+* **Strategic Action:** Leverage these specific audiences to build cross-sell campaigns across Email Marketing, Meta Ads, and TikTok Ads. If a customer buys an OP product, immediately launch targeted ads and email flows offering them Real Madrid products, capitalizing on the proven high correlation.
