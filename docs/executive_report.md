@@ -2,12 +2,12 @@
 
 **Client:** Rabbona Group | **Period:** 2018 - 2023
 
-![Dashboard Overview](../dashboards/Dashboard-project.png)
+![Dashboard Overview](../assets/dashboard.png)
 
 ## 1. The Business Problem
 
-The client operates a complex ecosystem of 4 distinct brands (**Oriente Petrolero, Rabbona, Victus, Nebula**) supported by an **Agile In-House Manufacturing Hub**.
-**The Challenge:** The business evolved from a pure digital model to a **Hybrid Retail System** (Physical Store + E-commerce). Production complexity varied by design (tiered vinyl costs, variable labor time), creating hidden margin leaks. While production was agile, marketing budget was being allocated inefficiently based on "Volume" rather than "Customer Value".
+The Rabbona Group operates a complex ecosystem of 4 distinct brands (**Oriente Petrolero, Rabbona, Victus, Nebula**) supported by an **Agile In-House Manufacturing Hub**.
+**The Challenge:** The business has grown from a purely digital operation to a **Hybrid Retail System** (Physical Store + E-commerce). While production architecture was agile, the marketing budget allocation was fundamentally flawed—optimized for raw **Volume** (Cost per Acquisition) rather than actual **Customer Value** (Lifetime Value). This created hidden margin leaks where low-retention, high-volume niches were over-funded while the most profitable segments were neglected.
 
 ## 2. The Solution: Customer Equity Audit
 
@@ -21,6 +21,10 @@ We unified data from all 4 WooCommerce stores into a single Analytical Engine to
 
 ### A. Niche Strategy: Acquisition vs. Loyalty
 
+![Niche Analysis Chart](../assets/segment-vs-niche.png)
+
+*(Tableau Sheet: Segment distribution across the top 4 niches)*
+
 * **Formula 1: High Acquisition, High Churn.** F1 drives the highest volume of New Customers (70% via Web), yet shows lower retention. High volume is currently a "one-off" transaction model.
   * **Strategic Action (Frequency & Conversion):** Increase **Launch Cadence** (more frequent drops) and implement automated email/SMS flows to turn these "New Customers" into repeat buyers.
 * **Oriente Petrolero: The Loyalty Engine.** While acquisition volume is lower, these customers have a **3x higher probability** of becoming "Champions." They are the anchor of business profitability.
@@ -29,6 +33,10 @@ We unified data from all 4 WooCommerce stores into a single Analytical Engine to
   * **Strategic Action (AOV Growth):** Implement **Bundle Pricing** to increase average order value, capitalizing on the high loyalty.
 
 ### B. Channel Audit: The ROI of Assisted Sales
+
+![Channel ROI Chart](../assets/channel-loyalty-ltv.png)
+
+*(Tableau Sheet: Champion concentration by acquisition channel)*
 
 * **Chat Channel (WhatsApp, FB Messenger, IG DM, TikTok DM):** This is the **Retention Champion**. **28% (1 in 3)** customers are Champions. Personalized assisted sales is the preferred anchor for high-value loyalists.
   * **Strategic Action:** Designate Chat channels for **Exclusive Pre-Launch Access**. Target Oriente Champions with early-access links via WhatsApp 24 hours before public release.
@@ -45,6 +53,10 @@ We unified data from all 4 WooCommerce stores into a single Analytical Engine to
 
 ### D. Growth Engine (Cross-Sell Probabilities)
 
+![Cross-Sell Matrix Chart](../assets/growth-cross-sell.png)
+
+*(Tableau Sheet: Visual network of high-probability cross-sell paths)*
+
 The "Next Best Action" matrix identified high-probability cross-sell paths based on historical behavior:
 
 | Purchase A (Trigger) | Next Likely Purchase (Offer) | Probability | Strategic Action (The "Playbook") |
@@ -53,9 +65,3 @@ The "Next Best Action" matrix identified high-probability cross-sell paths based
 | **Inglaterra** | **Manchester United** | **33.3%** | **Affinity Bundles:** Country + Club correlation. If they buy England, instantly offer Man Utd at checkout. |
 | **Barcelona** | **PSG** | **12.3%** | **The "Player" Effect:** Launch player-centric campaigns (Messi/Neymar legacy) targeting Barcelona buyers with PSG kits. |
 | **Oriente Petrolero** | **Bolivia National Team** | **9.2%** | **Event-Triggered:** Push National Team drops to Oriente buyers specifically during FIFA Match Weeks. |
-
-## 4. Technical Approach
-
-* **Data Structure:** Unified 4 SQL databases into a single Star Schema.
-* **Segmentation:** Implemented RFM using SQL `NTILE(5)` window functions.
-* **Visualization:** Tableau Dashboard (Hyperlinks to be added).

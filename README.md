@@ -1,63 +1,74 @@
-# Multi-Brand Growth Strategy: Decoding Niche Affinity & Channel Loyalty
+# Decoding Niche Affinity & Channel Loyalty
 
-![Dashboard Overview](dashboards/Dashboard-project.png)
+## Multi-Brand Customer Equity Audit | Rabbona Group | 2018–2023
 
-**Project Role:** Senior Data Analyst | **Tools:** SQL (MariaDB), Tableau
+![Dashboard Overview](assets/dashboard.png)
 
-> **[📄 Read the Executive Report (Key Insights & Strategy)](docs/executive_report.md)**
+> **Interactive Dashboard:** View Live on Tableau Public *(link pending)*
+> **[Read the Executive Report →](docs/executive_report.md)**
+
+| Metric | Finding |
+| :--- | :--- |
+| **Total Customers Analyzed** | ~2,600 unique profiles across 4 brands |
+| **Champion Concentration** | 49% of all Champions belong to one niche: Oriente Petrolero |
+| **Chat vs. Web LTV** | Chat-assisted sales generate **3x more value** per customer than Web |
+| **Top Cross-Sell Signal** | Oriente buyers → Real Madrid at **35.2% probability** |
+
+📄 **[Read the full Executive Report — Customer Equity Audit & Strategic Recommendations →](docs/executive_report.md)**
+
+---
 
 ## The Business Problem
 
-A vertically integrated retail group with 4 distinct brands was struggling to optimize its marketing budget.
+The Rabbona Group operated 4 WooCommerce stores (Pasión Albiverde, Rabbona, Victus, Nebula) targeting distinct niches across local football, global football, motorsport, and pop culture. Despite steady growth, marketing budget was being allocated by **volume** — not by **customer value**. The result: the highest-loyalty niche was being under-invested, while high-churn niches were over-funded.
 
-* **The Model:** **Hybrid Just-in-Time (JIT) Manufacturing.** Unlike simple POD, the business managed owned inventory of premium blanks (Bella+Canvas), optimizing margins by balancing "Pre-Cut Stock" for retail vs. "On-Demand Assembly" for online orders.
-* **The Conflict:** The business was torn between a **Volume-Based Acquisition** strategy (Formula 1 sales) and a **Value-Based Retention** strategy (Oriente Petrolero loyalty).
-* **The Objective:** Audit the customer base to pivot from **Customer Volume** to **Customer Equity** by identifying high-conversion niche and channel corridors.
+**Objective:** Audit the customer base across 3 dimensions — Niche Affinity, Channel Loyalty, and RFM Value — to reallocate budget toward the highest-equity segments.
 
-## The Solution: A Unified Customer Equity Engine
+---
 
-I unified siloed data from 4 WooCommerce stores into a single SQL Analytical Engine to audit the business across 3 dimensions: **Interest (Niche)**, **Channel (Source)**, and **Value (RFM Segment)**.
+## Key Findings
 
-### 1. Key Insights Uncovered (The Audit Results)
+### A. Niche Strategy: Acquisition vs. Loyalty
 
-#### A. Niche Strategy: Acquisition vs. Loyalty
+- **Oriente Petrolero:** Drives 49% of all Champions despite not having the highest order volume. This is the retention engine of the business — the niche that builds real lifetime value.
+- **Formula 1:** High acquisition volume (70% via Web) but low retention. Valuable as a top-of-funnel entry point, not as a loyalty anchor.
+- **Real Madrid:** 2.5:1 retention ratio — a quiet, high-affinity niche that punches above its weight.
 
-* **Formula 1:** Drives high acquisition volume (70% Web) but with lower retention. It is a massive **New Customer Funnel** that requires optimized remarketing.
-* **Oriente Petrolero:** The **Loyalty Engine**. Attracts **49% of ALL Champions**. It is the primary driver of recursive profit.
-* **Real Madrid:** High-affinity niche with a **2.5:1 Retention Ratio**.
+### B. Channel Audit: The ROI of "High Touch"
 
-#### B. Channel Strategy: The ROI of "High Touch"
+- **Chat (WhatsApp / FB Messenger / Instagram DM / TikTok DM):** 28% of buyers in this channel are Champions. Assisted sales generate **3x more lifetime value** per customer than self-serve web transactions.
+- **Web Checkout:** Highest acquisition volume but only 1.2% Champion conversion rate. Critical for growth, secondary for loyalty.
 
-* **Chat/Call (WhatsApp, FB Messenger, IG DM, TikTok DM):** **28%** of customers are Champions. Assisted sales generate **3x more Value per Customer** than pure web transactions.
-* **Web Checkout:** The primary "Volume Gate" for new acquisition, but secondary for long-term loyalty management.
+### C. Cross-Sell Probability Matrix
 
-#### C. Growth Opportunities (The "Player Effect")
+| Trigger Purchase | Next Likely Purchase | Probability | The Signal |
+| :--- | :--- | :--- | :--- |
+| **Oriente Petrolero** | Real Madrid | **35.2%** | Local pride + European giant affinity |
+| **England** | Manchester United | **33.3%** | Country-Club correlation |
+| **Barcelona** | PSG | **12.3%** | The Messi/Neymar player effect |
+| **Oriente Petrolero** | Bolivia National Team | **9.2%** | Patriotic double-loyalty |
 
-* **Cross-Sell Win:** Buyers of **Barcelona** have a **12% probability** of buying **PSG** (Messi/Neymar Effect).
-* **Cross-Sell Win:** **33%** of "England" buyers also purchase **Manchester United** (Country-Club correlation).
+---
+
+## Technical Architecture
+
+- **Data Unification:** 4 isolated WooCommerce databases consolidated into a single MariaDB Star Schema (~5,600 orders, ~9,000 order line items across 2018–2023)
+- **7-Layer SQL View Architecture:** Staging → Normalization → Niche Enrichment → Data Quality → RFM Engine → Tableau Reporting
+- **Absolute RFM Logic:** Business-threshold segmentation rather than relative `NTILE` percentiles, preventing high-churn niches (F1) from diluting the Champion definition
+- **PII Governance:** All customer identifiers (email, phone) anonymized via SHA-256 hashing before entering the analytical layer
+- **"Ghost Champions" Filter:** POS anonymous Tax-ID transactions identified and excluded to prevent loyalty model bias
 
 ---
 
 ## Repository Structure
 
-* **`/dashboards`**: The final Tableau Workbook (`niche_affinity_channel_loyalty.twbx`) visualizing the 5 Strategic Insights.
-* **`/docs`**: Executive Reports & Strategic Frameworks.
-  * `executive_report.md`: The high-level business findings (Start Here).
-  * `dashboard_wireframe.md`: The design spec for the visualization.
-* **`/sql`**: The Analytical Engine (7-Layer View Architecture).
-  * `01-05`: Data Unification & Staging.
-  * `06`: The RFM Segmentation Logic (Absolute Thresholds).
-  * `07`: The Strategic Reporting Layer.
-* **`/data`**: The final datasets used (`tableau_dataset.csv` & `affinity_matrix.csv`).
+- `sql/`: 7-layer SQL analytical engine (Staging through Strategic Reporting)
+- `data/`: Final CSV datasets consumed by the Tableau workbook
+- `docs/executive_report.md`: Full strategic findings and recommendations
+- `docs/data_quality_report.md`: Data governance, integrity audit and cleaning methodology
+- `assets/`: Exported dashboard visual and individual analytical sheets
+- `dashboards/`: Packaged Tableau workbook (`.twbx`)
 
 ---
 
-## Methodology & Technical Stack
-
-* **Data Engineering:** Built a Star Schema in MariaDB to unify ~5,600 orders and ~9,000 order line items across 4 stores (2018–2023).
-* **Data Quality:** Identifying and filtering "Ghost Champions" (Anonymous Tax-ID transactions) to prevent biasing the loyalty model.
-* **Analytics:** Used SQL Window Functions (`NTILE`) for initial scoring, then refined to **Absolute Logic** to correct for "One-Time Buyer" bias in the F1 niche.
-* **Visualization:** Tableau Dashboard focusing on "Share of Champions" rather than just Volume.
-
----
-*This project is part of my professional portfolio demonstrating Data Analysis, SQL Engineering, and Strategic Business Intelligence.*
+*This project is part of a professional Data Analysis portfolio demonstrating SQL Engineering, Customer Segmentation, and Strategic Business Intelligence.*
